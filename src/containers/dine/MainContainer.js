@@ -3,22 +3,7 @@ import {NavLink, useParams} from 'react-router-dom'
 import {Card, Col, Row} from 'react-bootstrap'
 
 const FOODS = [
-
-  {
-    title: 'Шаурма большая',
-    price: 150,
-    category: 'zavtrak',
-    description: 'Some quick example',
-    image: 'https://thumbor.uds.app/unsafe/fit-in/320x320/filters:upscale():fill(blur):quality(60)/game-prod/549756143602/281e247b-2d1d-430e-9917-153d6a76e3ea/1646316017173',
-  },
-  {
-    title: 'Шаурма burgery',
-    price: 150,
-    category: 'burgery',
-    description: 'Some quick example',
-    image: 'https://thumbor.uds.app/unsafe/fit-in/320x320/filters:upscale():fill(blur):quality(60)/game-prod/549756143602/281e247b-2d1d-430e-9917-153d6a76e3ea/1646316017173',
-  },
-
+  
 ];
 
 const MENU = [
