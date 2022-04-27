@@ -1,9 +1,10 @@
-import './styles.scss';
 import {Route, Routes, useLocation} from 'react-router-dom'
 import DineMainContainer from './containers/dine/MainContainer'
 import {useEffect} from 'react'
 import {Container} from 'react-bootstrap'
 import EmaMainContainer from './containers/ema/MainContainer'
+import ShawarmaMainContainer from './containers/shawarma/MainContainer'
+import './App.scss'
 
 function App() {
   const location = useLocation();
@@ -22,8 +23,10 @@ function App() {
         <Route path="/ema" exact element={<EmaMainContainer/>}/>
         <Route path="/ema/:category" exact element={<EmaMainContainer/>}/>
 
-      </Routes>
+        <Route path="/shawarma" exact element={<ShawarmaMainContainer/>}/>
+        <Route path="/shawarma/:category" exact element={<ShawarmaMainContainer/>}/>
 
+      </Routes>
     </Container>
   );
 }

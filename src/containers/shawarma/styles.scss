@@ -1,0 +1,50 @@
+.shawarma-menu {
+  .menu-categories {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    float: left;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    white-space: nowrap;
+    background-color: white;
+
+    a {
+      width: 25vw;
+      text-align: center;
+      padding: 4px 14px;
+      margin: 4px;
+      text-decoration: none;
+      border: 1px solid #eee;
+      text-overflow: ellipsis;
+      color: #49505e;
+      white-space: nowrap;
+      display: inline-block;
+      overflow: hidden;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 1px 1px 2px #49505e;
+      max-width: 25vw;
+    }
+
+    a.active {
+      background-color: blue;
+      border: 1px solid #E3181F;
+      color: white;
+    }
+  }
+
+  .food {
+    height: 100%;
+
+    .price {
+      color: #E3181F;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  .menu-categories::-webkit-scrollbar {
+    display: none;
+  }
+}
