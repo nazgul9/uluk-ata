@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {Route, Routes, useLocation} from 'react-router-dom'
+import MainContainer from './containers/dine/MainContainer'
+import CategoryContainer from './containers/dine/CategoryContainer'
+import {useEffect} from 'react'
+import {Container} from 'react-bootstrap'
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [location.pathname]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Routes>
+
+        <Route path="/dine" element={<MainContainer/>}/>
+        <Route path="/dine/:category" element={<CategoryContainer/>}/>
+
+      </Routes>
+
+    </Container>
   );
 }
 
