@@ -1,3 +1,4 @@
+import './styles.scss'
 import {NavLink, useParams} from 'react-router-dom'
 import {Card, Col, Row} from 'react-bootstrap'
 
