@@ -19,7 +19,7 @@ const FOODS = [
     image: 'https://thumbor.uds.app/unsafe/fit-in/320x320/filters:upscale():fill(blur):quality(60)/game-prod/549756143602/281e247b-2d1d-430e-9917-153d6a76e3ea/1646316017173',
   },
 
-];
+]
 
 const MENU = [
 
@@ -30,12 +30,12 @@ const MENU = [
   {label: 'Пицца', link: 'picca'},
   {label: 'Крылышки', link: 'krylishki'},
 
-];
+]
 
 function MainContainer() {
-  const {category} = useParams();
+  const {category} = useParams()
 
-  const getLink = (l) => `/ema/${l}`;
+  const getLink = (l) => `/ema/${l}`
 
   return (
     <div className={'ema-menu'}>
@@ -54,9 +54,9 @@ function MainContainer() {
 
       <Row>
         {FOODS.filter(g => !category || g.category === category).map(g => (
-          <Col lg={3} md={4} xs={6}>
+          <Col lg={3} md={4} xs={6} className="mb-4">
             <Card className={'food'}>
-              <Card.Img variant="top" src={g.image} />
+              <Card.Img variant="top" src={g.image}/>
               <Card.Body className={'d-flex flex-column'}>
                 <div className={'flex-grow-1'}>
                   <h5 className={'m-0'}>{g.title}</h5>
@@ -70,7 +70,7 @@ function MainContainer() {
       </Row>
 
     </div>
-  );
+  )
 }
 
-export default MainContainer;
+export default MainContainer
