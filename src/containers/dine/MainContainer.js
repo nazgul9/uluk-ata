@@ -9,6 +9,15 @@ const MENU = [
   {label: 'Шаурма', link: 'shaurma'},
   {label: 'Пицца', link: 'picca'},
   {label: 'Крылышки', link: 'krylishki'},
+  {label: 'Горячий роллы', link: 'groll'},
+  {label: 'Холодные роллы', link: 'hroll'},
+  {label: 'Горячии напитки', link: 'gnapitki'},
+  {label: 'Hапитки', link: 'napitki'},
+  {label: 'Сок', link: 'sok'},
+  {label: 'Блюда', link: 'bluda'},
+  {label: 'Салат', link: 'salat'},
+  {label: 'Соус', link: 'sous'},
+  {label: 'Вок', link: 'wok'},
 
 ];
 
