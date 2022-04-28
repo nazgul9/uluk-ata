@@ -1,5 +1,6 @@
 .ema-menu {
   .menu-categories {
+    z-index: 1000;
     overflow-x: scroll;
     overflow-y: hidden;
     float: left;
@@ -8,6 +9,11 @@
     width: 100%;
     white-space: nowrap;
     background-color: white;
+
+    img{
+      border-radius: 100px;
+    
+    }
 
     a {
       width: 25vw;

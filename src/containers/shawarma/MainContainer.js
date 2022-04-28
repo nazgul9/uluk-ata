@@ -301,7 +301,7 @@ function MainContainer() {
     <div className={'shawarma-menu'}>
 
       <div className={'d-flex justify-content-center'}>
-        <img alt={'Menu Shawarma'} style={{width: '50vw'}} src={require('../../assets/dine/2000.png')}/>
+        <img alt={'Menu Shawarma'} style={{width: '50vw'}} src={require('../../assets/Shawarma/Shawarma.jpeg')}/>
       </div>
 
       <div className={'menu-categories'}>
