@@ -25,6 +25,8 @@ function App() {
 
         <Route path="/shawarma" exact element={<ShawarmaMainContainer/>}/>
         <Route path="/shawarma/:category" exact element={<ShawarmaMainContainer/>}/>
+        {/* <Route path="/" exact element={<ShawarmaMainContainer/>}/> */}
+
 
       </Routes>
     </Container>
