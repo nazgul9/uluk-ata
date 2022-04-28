@@ -4,4 +4,9 @@
 
 $line-height-base: 1.2;
 
+h5 {
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+}
+
 @import "~bootstrap/scss/bootstrap";

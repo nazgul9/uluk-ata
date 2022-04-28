@@ -630,7 +630,7 @@ function MainContainer() {
                 <Card.Img variant="top" style={{height: '20vh', objectFit: 'cover'}} src={g.image}/>
                 <Card.Body className={'d-flex flex-column'}>
                   <div className={'flex-grow-1'}>
-                    <h5 className={'m-0'} style={{fontSize: '1rem'}}>{g.title}</h5>
+                    <h5 className={'m-0'}>{g.title}</h5>
                     <p className={'m-0 my-1 text-muted'}>{g.description}</p>
                   </div>
                   <div className={'price'}>{g.price} </div>
