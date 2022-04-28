@@ -1,5 +1,5 @@
 import {NavLink, useParams} from 'react-router-dom'
-import {Card, Col, Row} from 'react-bootstrap'
+import MenuListComponent from '../../components/MenuListComponent'
 
 const FOODS = [
 
@@ -222,8 +222,8 @@ const FOODS = [
   }, {
 
     'title': 'ПИЦЦА С КУРИЦЕЙ'
-    , 'price': '180,280'
-    , 'description': '26см,32см'
+    , 'price': '180/280'
+    , 'description': '26см, 32см'
     , 'image': 'https://s1.eda.ru/StaticContent/Photos/130410124428/130422111624/p_O.jpg',
     'category': 'picca',
   }, {
@@ -838,6 +838,8 @@ const MENU = [
 function MainContainer() {
   const {category} = useParams()
 
+  const FILTERED_FOODS = FOODS.filter(g => !category || g.category === category)
+
   const getLink = (l) => `/ema/${l}`
 
   return (
@@ -856,22 +858,7 @@ function MainContainer() {
         ))}
       </div>
 
-      <Row>
-        {FOODS.filter(g => !category || g.category === category).map(g => (
-          <Col lg={3} md={4} xs={6} className="mb-4">
-            <Card className={'food'}>
-              <Card.Img variant="top" src={g.image}/>
-              <Card.Body className={'d-flex flex-column'}>
-                <div className={'flex-grow-1'}>
-                  <h5 className={'m-0'}>{g.title}</h5>
-                  <p className={'m-0 text-muted'}>{g.description}</p>
-                </div>
-                <div className={'price'}>{g.price} KGS</div>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+      <MenuListComponent category={category} list={FILTERED_FOODS} />
 
     </div>
   )
