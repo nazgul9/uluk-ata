@@ -823,7 +823,7 @@ function MainContainer() {
     <div className={'ema-menu'}>
 
       <div className={'d-flex justify-content-center'}>
-        <img alt={'Menu Shawarma'} style={{ width: '50vw' }} src={require('../../assets/dine/2000.png')} />
+        <img alt={'Menu Ema'} style={{ width: '50vw' }} src={require('../../assets/ema/ema.png')} />
       </div>
 
       <div className={'menu-categories'}>
