@@ -1,9 +1,12 @@
 .dine-menu {
+  .bg-primary {
+    background-color: #00A2E3 !important;
+  }
+
   .menu-categories {
     z-index: 1000;
     overflow-x: scroll;
     overflow-y: hidden;
-    float: left;
     position: sticky;
     top: 0;
     width: 100%;

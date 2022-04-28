@@ -1,4 +1,3 @@
-import './styles.scss'
 import {NavLink, useParams} from 'react-router-dom'
 import {Card, Col, Row} from 'react-bootstrap'
 
@@ -410,12 +409,14 @@ const FOODS = [
     'category': 'napitki',
   }, {'title': 'Адыгене', 'description': '(0.5/1л)', 'price': '30/40 cом', 'category': 'napitki'},
 
-  {'title': 'j-7', 'description': '1л', 'price': '120 cом', 'category': 'sok'}, {
+  {'title': 'j-7', 'description': '1л', 'price': '120 cом', 'category': 'sok'},
+  {
     'title': 'Piko',
     'description': '1л',
     'price': '100 cом',
     'category': 'sok',
-  }, {'title': 'Любимый', 'description': '1л', 'price': '100 cом', 'category': 'sok'},
+  },
+  {'title': 'Любимый', 'description': '1л', 'price': '100 cом', 'category': 'sok'},
 
   {
     'title': 'Шорпо из говядины',
@@ -602,6 +603,10 @@ function MainContainer() {
 
   const getLink = (l) => `/dine/${l}`
 
+  const FILTERED_FOODS = FOODS.filter(g => !category || g.category === category)
+
+  const with_image = !category || FILTERED_FOODS.filter(g => 'image' in g).length === FILTERED_FOODS.length
+
   return (
     <div className={'dine-menu'}>
 
@@ -617,22 +622,33 @@ function MainContainer() {
         ))}
       </div>
 
-      <Row>
-        {FOODS.filter(g => !category || g.category === category).map(g => (
-          <Col lg={3} md={4} xs={6} className="mb-4">
-            <Card className={'food'}>
-              <Card.Img variant="top" src={g.image}/>
-              <Card.Body className={'d-flex flex-column'}>
-                <div className={'flex-grow-1'}>
-                  <h5 className={'m-0'}>{g.title}</h5>
-                  <p className={'m-0 text-muted'}>{g.description}</p>
-                </div>
-                <div className={'price'}>{g.price} </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+      {with_image || !category ? (
+        <Row>
+          {FILTERED_FOODS.map(g => (
+            <Col lg={3} md={4} xs={6} className="mb-4">
+              <Card className={'food'}>
+                <Card.Img variant="top" style={{height: '20vh', objectFit: 'cover'}} src={g.image}/>
+                <Card.Body className={'d-flex flex-column'}>
+                  <div className={'flex-grow-1'}>
+                    <h5 className={'m-0'} style={{fontSize: '1rem'}}>{g.title}</h5>
+                    <p className={'m-0 my-1 text-muted'}>{g.description}</p>
+                  </div>
+                  <div className={'price'}>{g.price} </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      ) : (
+        <ul className="list-group mb-4">
+          {FILTERED_FOODS.map(g => (
+            <li className="list-group-item d-flex justify-content-between align-items-center">
+              {g.title}
+              <span className="badge bg-primary rounded-pill">{g.price}</span>
+            </li>
+          ))}
+        </ul>
+      )}
 
     </div>
   )
