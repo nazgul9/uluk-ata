@@ -9,4 +9,11 @@ h5 {
   font-size: 1rem !important;
 }
 
+.food {
+  img {
+    object-fit: contain;
+    height: 20vh;
+  }
+}
+
 @import "~bootstrap/scss/bootstrap";

@@ -860,7 +860,7 @@ function MainContainer() {
         {FOODS.filter(g => !category || g.category === category).map(g => (
           <Col lg={3} md={4} xs={6} className="mb-4">
             <Card className={'food'}>
-              <Card.Img variant="top" style={{height: '20vh', objectFit: 'cover'}} src={g.image}/>
+              <Card.Img variant="top" src={g.image}/>
               <Card.Body className={'d-flex flex-column'}>
                 <div className={'flex-grow-1'}>
                   <h5 className={'m-0'}>{g.title}</h5>
