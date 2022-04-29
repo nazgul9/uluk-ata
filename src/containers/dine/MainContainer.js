@@ -2,6 +2,9 @@ import './styles.scss'
 import {NavLink, useParams} from 'react-router-dom'
 import {Card, Col, Row} from 'react-bootstrap'
 
+
+
+
 const FOODS = [
   {
     'title': 'Блинчик со сметаной',
@@ -605,17 +608,19 @@ function MainContainer() {
   return (
     <div className={'dine-menu'}>
 
-      <div className={'d-flex justify-content-center'}>
+      <div className={'d-flex justify-content-center '}>
         <img alt={'Menu Dine'} style={{width: '50vw'}} src={require('../../assets/dine/2000.png')}/>
       </div>
 
-      <div className={'menu-categories'}>
+      <h6 className={'menu-categories'}>
+     
         {MENU.map(g => (
           <NavLink to={getLink(g.link)} className={(category || '') === g.link ? 'active' : ''}>
             {g.label}
           </NavLink>
         ))}
-      </div>
+       
+      </h6>
 
       <Row>
         {FOODS.filter(g => !category || g.category === category).map(g => (
@@ -627,7 +632,7 @@ function MainContainer() {
                   <h5 className={'m-0'}>{g.title}</h5>
                   <p className={'m-0 text-muted'}>{g.description}</p>
                 </div>
-                <div className={'price'}>{g.price} </div>
+                <h4 className={'price'}>{g.price} </h4>
               </Card.Body>
             </Card>
           </Col>

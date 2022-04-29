@@ -34,17 +34,20 @@
     }
 
     a.active {
-      background-color: blue;
+      background-color: #df393b;
       border: 1px solid #E3181F;
-      color: white;
+      color: #f7de09;
+       color: white;
     }
+    
+ 
   }
 
   .food {
     height: 100%;
 
     .price {
-      color: #E3181F;
+      color: #df393b;
       font-size: 18px;
       text-align: center;
     }

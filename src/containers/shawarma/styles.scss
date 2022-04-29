@@ -9,6 +9,8 @@
     width: 100%;
     white-space: nowrap;
     background-color: white;
+   
+    // box-shadow: 20px 20px grey
 
     a {
       width: 25vw;
@@ -24,13 +26,14 @@
       overflow: hidden;
       background-color: white;
       border-radius: 20px;
-      box-shadow: 1px 1px 2px #49505e;
+      box-shadow: 1px 1px 2px #49505e; 
+      // box-shadow: 5px 5px 15px #49505e;
       max-width: 25vw;
     }
 
     a.active {
-      background-color: blue;
-      border: 1px solid #E3181F;
+      background-color: #f45b06;
+      border: 1px solid #f45b06;
       color: white;
     }
   }
@@ -39,7 +42,7 @@
     height: 100%;
 
     .price {
-      color: #E3181F;
+      color: #f45b06;
       font-size: 18px;
       text-align: center;
     }

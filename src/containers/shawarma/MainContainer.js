@@ -298,19 +298,19 @@ function MainContainer() {
   const getLink = (l) => `/shawarma/${l}`
 
   return (
-    <div className={'shawarma-menu'}>
+    <div className={'shawarma-menu p-3'}>
 
       <div className={'d-flex justify-content-center'}>
         <img alt={'Menu Shawarma'} style={{width: '50vw'}} src={require('../../assets/Shawarma/Shawarma.jpeg')}/>
       </div>
 
-      <div className={'menu-categories'}>
+      <h6 className={'menu-categories m-2'}>
         {MENU.map(g => (
           <NavLink to={getLink(g.link)} className={(category || '') === g.link ? 'active' : ''}>
             {g.label}
           </NavLink>
         ))}
-      </div>
+      </h6>
 
       <Row>
         {FOODS.filter(g => !category || g.category === category).map(g => (
@@ -322,7 +322,7 @@ function MainContainer() {
                   <h5 className={'m-0'}>{g.title}</h5>
                   <p className={'m-0 text-muted'}>{g.description}</p>
                 </div>
-                <div className={'price'}>{g.price}</div>
+                <h4 className={'price'}>{g.price}</h4>
               </Card.Body>
             </Card>
           </Col>
