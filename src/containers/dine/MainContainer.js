@@ -2,15 +2,12 @@ import './styles.scss'
 import {NavLink, useParams} from 'react-router-dom'
 import {Card, Col, Row} from 'react-bootstrap'
 
-
-
-
 const FOODS = [
   {
     'title': 'Блинчик со сметаной',
     'description': '(1шт)',
     'price': '20 сом',
-    'image': 'http://localhost:3001/img/blinchik.jpeg',
+    'image': 'https://dine-menu.web.app/img/blinchik.jpeg',
     'category': 'zavtrak',
   }, {
     'title': 'Блинчик шоколадный',
@@ -22,7 +19,7 @@ const FOODS = [
     'title': 'Блинчик с джемом',
     'description': '(1шт)',
     'price': '25 сом',
-    'image': 'http://localhost:3001/img/blinchiksdjemom.jpeg',
+    'image': 'https://dine-menu.web.app/img/blinchiksdjemom.jpeg',
     'category': 'zavtrak',
   }, {
     'title': 'Блинчик с творогом',
@@ -48,7 +45,7 @@ const FOODS = [
     'title': 'Гамбургер двойной с говяжьей котлетой',
     'description': '(мясо, гов)',
     'price': '250 cом',
-    'image': 'http://localhost:3001/img/burger2.jpeg',
+    'image': 'https://dine-menu.web.app/img/burger2.jpeg',
     'category': 'burgery',
   }, {
     'title': 'Чизбургер с говяжьей котлетой',
@@ -72,7 +69,7 @@ const FOODS = [
     'title': 'Dine бургер',
     'description': '(говяжий котлет,сыр ,помидор,соленые огурцы,лук крас)',
     'price': '170 cом',
-    'image': '.././img/dineburger.jpeg',
+    'image': 'https://dine-menu.web.app/img/dineburger.jpeg',
     'category': 'burgery',
   },
 
@@ -80,43 +77,42 @@ const FOODS = [
     'title': 'Шаурма ассорти',
     'description': 'мясо гов , сосиски, помидор ,огурцы, капуста, фри',
     'price': '180 сом',
-    'image': 'http://localhost:3001/img/shaurma.jpeg',
+    'image': 'https://dine-menu.web.app/img/shaurma.jpeg',
     'category': 'shaurma',
   }, {
     'title': 'Шаурма из говядины',
     'description': 'мясо гов, помидор, огурцы, капуста, фри',
     'price': '160 сом',
-    'image': 'http://localhost:3001/img/shaurma.jpeg',
-    'category': 'shaurma',
+    'image': 'https://dine-menu.web.app/img/shaurma.jpeg'
   }, {
     'title': 'Шаурма из курицы',
     'description': 'мясо кур, салаты, огурцы, капуста,фри',
     'price': '160 сом',
-    'image': 'http://localhost:3001/img/shaurma.jpeg',
+    'image': 'https://dine-menu.web.app/img/shaurma.jpeg',
     'category': 'shaurma',
   }, {
     'title': 'Шаурма большой',
     'description': 'мясо кур 2х, помидор, салаты, огурцы, капуста,фри',
     'price': '230 сом',
-    'image': 'http://localhost:3001/img/shaurma.jpeg',
+    'image': 'https://dine-menu.web.app/img/shaurma.jpeg',
     'category': 'shaurma',
   }, {
     'title': 'Шаурма микс',
     'description': 'мясо гов/кур, помидор,  огурцы, капуста,фри',
     'price': '200 сом',
-    'image': 'http://localhost:3001/img/shaurma.jpeg',
+    'image': 'https://dine-menu.web.app/img/shaurma.jpeg',
     'category': 'shaurma',
   }, {
     'title': 'Шаурма с сыром',
     'description': 'мясо гов, сыр, помидор,  огурцы, капуста',
     'price': '180 сом',
-    'image': 'http://localhost:3001/img/shaurma.jpeg',
+    'image': 'https://dine-menu.web.app/img/shaurma.jpeg',
     'category': 'shaurma',
   }, {
     'title': 'Шаурма вегетарианский',
     'description': 'салатыб помидор,  огурцы, соус',
     'price': '80 сом',
-    'image': 'http://localhost:3001/img/shaurma.jpeg',
+    'image': 'https://dine-menu.web.app/img/shaurma.jpeg',
     'category': 'shaurma',
   }, {
     'title': 'Гамбургер из говядины',
@@ -146,7 +142,7 @@ const FOODS = [
     'title': 'Гамбургер двойной',
     'description': 'мясо гов 2х, салат, помидор, огурцы',
     'price': '140 сом',
-    'image': '.././img/burger2.jpeg',
+    'image': 'https://dine-menu.web.app/img/burger2.jpeg',
     'category': 'shaurma',
   }, {
     'title': 'Гамбургер вегетарианский',
@@ -198,12 +194,12 @@ const FOODS = [
   }, {
     'title': 'Картофель фри',
     'price': '80 сом',
-    'image': 'http://localhost:3001/img/fri.jpeg',
+    'image': 'https://dine-menu.web.app/img/fri.jpeg',
     'category': 'shaurma',
   }, {
     'title': 'Картофель по-деревенной',
     'price': '100 сом',
-    'image': 'http://localhost:3001/img/fri2.jpeg',
+    'image': 'https://dine-menu.web.app/img/fri2.jpeg',
     'category': 'shaurma',
   }, {
     'title': 'Крокеты',
@@ -216,7 +212,7 @@ const FOODS = [
     'title': 'Dine',
     'description': '(сыр,соус,сливочный,мусулман колбаса,кур.филе,лук)',
     'price': '350/450 сом',
-    'image': 'http://localhost:3001/img/pizzadaine.jpeg',
+    'image': 'https://dine-menu.web.app/img/pizzadaine.jpeg',
     'category': 'picca',
   }, {
     'title': 'Маргарита',
@@ -266,25 +262,25 @@ const FOODS = [
     'title': 'Крылышки острые',
     'description': '(3шт) ',
     'price': '100 cом',
-    'image': 'http://localhost:3001/img/pizzadaine.jpeg',
+    'image': 'https://dine-menu.web.app/img/krylyshki.jpeg',
     'category': 'krylishki',
   }, {
     'title': 'Крылышки острые',
     'description': '(12шт)',
     'price': '390 cом',
-    'image': 'http://localhost:3001/img/pizzadaine.jpeg',
+    'image': 'https://dine-menu.web.app/img/krylyshki.jpeg',
     'category': 'krylishki',
   }, {
     'title': 'Крылышки острые',
     'description': '(18шт)',
     'price': '550 cом',
-    'image': 'http://localhost:3001/img/pizzadaine.jpeg',
+    'image': 'https://dine-menu.web.app/img/krylyshki.jpeg',
     'category': 'krylishki',
   }, {
     'title': 'Крылышки острые',
     'description': '(24шт)',
     'price': '700 cом',
-    'image': 'http://localhost:3001/img/pizzadaine.jpeg',
+    'image': 'https://dine-menu.web.app/img/krylyshki.jpeg',
     'category': 'krylishki',
   },
 
@@ -298,7 +294,7 @@ const FOODS = [
     'title': 'Заpеченный ролл ч лососем',
     'description': '(лосось,сыр слив,соус сыр,унаги)',
     'price': '230 сом',
-    'image': 'http://localhost:3001/img/zarechnyiroll.jpeg',
+    'image': 'https://dine-menu.web.app/img/zarechnyiroll.jpeg',
     'category': 'groll',
   }, {
     'title': 'Заpеченный ролл с сыром',
@@ -336,7 +332,7 @@ const FOODS = [
     'title': 'Филадельфия',
     'description': '(лосось,сыр сливочный,свежие огурцы)',
     'price': '240 сом',
-    'image': 'http://localhost:3001/img/filadrool.jpeg',
+    'image': 'https://dine-menu.web.app/img/filadrool.jpeg',
     'category': 'hroll',
   }, {
     'title': 'Канадский',
@@ -448,7 +444,7 @@ const FOODS = [
     'title': 'Лагман национальный',
     'description': '(1порц)',
     'price': '150 сом',
-    'image': 'http://localhost:3001/img/lagman.jpeg',
+    'image': 'https://dine-menu.web.app/img/lagman.jpeg',
     'category': 'bluda',
   }, {
     'title': 'Борщ',
@@ -472,7 +468,7 @@ const FOODS = [
     'title': 'Бифштекс',
     'description': '(1порц)',
     'price': '160 сом',
-    'image': 'http://localhost:3001/img/bt.jpeg',
+    'image': 'https://dine-menu.web.app/img/bt.jpeg',
     'category': 'bluda',
   }, {
     'title': 'Гуляш',
@@ -484,19 +480,19 @@ const FOODS = [
     'title': 'Манты',
     'description': '(1шт,1порц)',
     'price': '30,150 сом',
-    'image': 'http://localhost:3001/img/manty.jpeg',
+    'image': 'https://dine-menu.web.app/img/manty.jpeg',
     'category': 'bluda',
   }, {
     'title': 'Манты жареный',
     'description': '(1шт,1порц)',
     'price': '35,175 сом',
-    'image': 'http://localhost:3001/img/manty.jpeg',
+    'image': 'https://dine-menu.web.app/img/manty.jpeg',
     'category': 'bluda',
   }, {
     'title': 'Плов',
     'description': '(1порц)',
     'price': '150 сом',
-    'image': 'http://localhost:3001/img/ash.jpeg',
+    'image': 'https://dine-menu.web.app/img/ash.jpeg',
     'category': 'bluda',
   }, {
     'title': 'Курица хрустящий',
@@ -508,7 +504,7 @@ const FOODS = [
     'title': 'Яйца с горохом',
     'description': '(150гр)',
     'price': '130 сом',
-    'image': 'http://localhost:3001/img/goroxtukum.jpeg',
+    'image': 'https://dine-menu.web.app/img/ash.jpeg',
     'category': 'bluda',
   }, {
     'title': 'Гарнир',
@@ -534,19 +530,19 @@ const FOODS = [
     'title': 'Оливье',
     'description': '(200гр)',
     'price': '120 сом',
-    'image': 'http://localhost:3001/img/o.jpeg',
+    'image': 'https://dine-menu.web.app/img/o.jpeg',
     'category': 'salat',
   }, {
     'title': 'Острый',
     'description': '(200гр)',
     'price': '180 сом',
-    'image': 'http://localhost:3001/img/o.jpeg',
+    'image': 'https://dine-menu.web.app/img/saladostryi.jpeg',
     'category': 'salat',
   }, {
     'title': 'Цезарь с курицей',
     'description': '(200гр)',
     'price': '180 сом',
-    'image': 'http://localhost:3001/img/sezarsalat.jpeg',
+    'image': 'https://dine-menu.web.app/img/sezarsalat.jpeg',
     'category': 'salat',
   },
 
