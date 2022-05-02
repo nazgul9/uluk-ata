@@ -1,1 +1,19 @@
+@import "./containers/dine/styles";
+@import "./containers/ema/styles";
+@import "./containers/shawarma/styles";
+
+$line-height-base: 1.2;
+
+h5 {
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+}
+
+.food {
+  img {
+    object-fit: contain;
+    height: 20vh;
+  }
+}
+
 @import "~bootstrap/scss/bootstrap";

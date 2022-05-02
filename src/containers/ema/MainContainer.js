@@ -1,6 +1,5 @@
-import './styles.scss'
-import { NavLink, useParams } from 'react-router-dom'
-import { Card, Col, Row } from 'react-bootstrap'
+import {NavLink, useParams} from 'react-router-dom'
+import MenuListComponent from '../../components/MenuListComponent'
 
 const FOODS = [
 
@@ -19,20 +18,20 @@ const FOODS = [
     'image': 'https://static.1000.menu/img/content-v2/05/d8/21554/klassicheskaya-shaurma_1589963797_11_max.jpg',
   },
   {
-    'title': "ШАУРМА АССОРТИ",
+    'title': 'ШАУРМА АССОРТИ',
     'price': '170',
     'image': 'https://unopizza.com.ua/image/cache/catalog/pizza/shaurma-asorti-500x500.jpg',
     'category': 'shaurma',
   },
   {
 
-    'title': "ШАУРМА С СЫРОМ"
+    'title': 'ШАУРМА С СЫРОМ'
     , 'price': '170'
     , 'image': 'https://static.1000.menu/img/content/29240/shaurma-s-syrom_1540395523_1_max.jpg',
     'category': 'shaurma',
   }, {
 
-    'title': "ШАУРМА БОЛЬШАЯ",
+    'title': 'ШАУРМА БОЛЬШАЯ',
     'price': '210',
     'image': 'https://fastly.4sqi.net/img/general/600x600/41948107_gNoV6O8gwq0Avq9NqVxxFCoeq9ZMvE9RClBvWmzwGpk.jpg',
     'category': 'shaurma',
@@ -40,58 +39,60 @@ const FOODS = [
 
   {
 
-    'title': "КАША МАННАЯ",
+    'title': 'КАША МАННАЯ',
     'price': '70'
-    , 'description': "1 порц"
+    , 'description': '1 порц'
     , 'image': 'https://s1.eda.ru/StaticContent/Photos/130805160644/130813135643/p_O.jpg',
     'category': 'zavtrak',
   }, {
 
-    'title': "КАША ОВСЯНАЯ"
+    'title': 'КАША ОВСЯНАЯ'
     , 'price': '70'
-    , 'description': "1 порц"
+    , 'description': '1 порц'
     , 'image': 'https://img.povar.ru/main/84/c3/c3/d6/postnaya_ovsyanaya_kasha-417702.jpg',
     'category': 'zavtrak',
   }, {
-    'title': "КАША РИСОВАЯ"
+    'title': 'КАША РИСОВАЯ'
     , 'price': '70'
-    , 'description': "1 порц"
+    , 'description': '1 порц'
     , 'image': 'https://img.delo-vcusa.ru/2019/03/Risovaya-molochnaya-kasha.jpg',
     'category': 'zavtrak',
   }, {
 
-    'title': "БЛИНЫ СО СМЕТАНОЙ БЛИНЫ С ТВОРОГОМ"
+    'title': 'БЛИНЫ СО СМЕТАНОЙ БЛИНЫ С ТВОРОГОМ'
     , 'price': '70,80'
     , 'image': 'https://www.konditer-club.ru/i/gallery/encyclopediaitems/image284b.jpg',
     'category': 'zavtrak',
   }, {
 
-    'title': "ЯИЧНИЦА ИЗ ТРЕХ ЯИЦ"
+    'title': 'ЯИЧНИЦА ИЗ ТРЕХ ЯИЦ'
     , 'price': '70'
-    , 'description': "1 порц"
+    , 'description': '1 порц'
     , 'image': 'https://ss.sport-express.ru/userfiles/materials/175/1752932/volga.jpg',
     'category': 'zavtrak',
   }, {
 
-    'title': "СЫРНИКИ С ВАРЕНЬЕМ СЫРНИКИ СО СМЕТАНОЙ"
+    'title': 'СЫРНИКИ С ВАРЕНЬЕМ СЫРНИКИ СО СМЕТАНОЙ'
     , 'price': '90'
     , 'image': 'https://prostokvashino.ru/upload/iblock/d28/d28e1b22ab38bfcce66f54a1a80e7526.jpg',
     'category': 'zavtrak',
   }, {
 
-    'title': "АНГЛИЙСКИЙ ЗАВТРАК"
+    'title': 'АНГЛИЙСКИЙ ЗАВТРАК'
     , 'price': '120'
     , 'image': 'https://www.gastronom.ru/binfiles/images/20150722/b27b3f78.jpg',
     'category': 'zavtrak',
   }, {
 
-    'title': "ОМЛЕТ "
-    , 'price': '80'
-    , 'image': 'https://static.1000.menu/img/content-v2/90/36/45938/omlet-iz-yaic-i-moloka-prostoi-na-skovorode_1622035051_0_max.jpg',
+    'title': 'ОМЛЕТ '
+    ,
+    'price': '80'
+    ,
+    'image': 'https://static.1000.menu/img/content-v2/90/36/45938/omlet-iz-yaic-i-moloka-prostoi-na-skovorode_1622035051_0_max.jpg',
     'category': 'zavtrak',
   }, {
 
-    'title': "КАПУЧИНО С КРУАССАНОМ"
+    'title': 'КАПУЧИНО С КРУАССАНОМ'
     , 'price': '140'
     , 'image': 'https://img.freepik.com/free-photo/cappuccino-with-croissant_87414-3069.jpg',
     'category': 'zavtrak',
@@ -100,7 +101,7 @@ const FOODS = [
 
   {
 
-    'title': "ЧИКЕН БУРГЕР",
+    'title': 'ЧИКЕН БУРГЕР',
     'price': '100'
     , 'image': 'https://mcdonalds.kz/storage/2501/1aea60db5a4ae151271e260a4c0c11b083c95cf8.png',
     'category': 'burgery'
@@ -112,7 +113,7 @@ const FOODS = [
     'category': 'burgery'
   }, {
 
-    'title': "ХОТ-ДОГ"
+    'title': 'ХОТ-ДОГ'
     , 'price': '65'
     , 'image': 'https://e2.edimdoma.ru/data/posts/0001/6493/16493-ed4_wide.jpg?1631186249',
     'category': 'burgery'
@@ -142,7 +143,7 @@ const FOODS = [
     'category': 'burgery'
   }, {
 
-    'title': "ЕМА БУРГЕР АССОРТИ"
+    'title': 'ЕМА БУРГЕР АССОРТИ'
     , 'price': '120'
     , 'image': 'https://biznesprost.com/wp-content/uploads/2018/06/biznes-plan-burgernoj.jpg',
     'category': 'burgery'
@@ -815,17 +816,18 @@ const MENU = [
 ]
 
 function MainContainer() {
-  const { category } = useParams()
+  const {category} = useParams()
+
+  const FILTERED_FOODS = FOODS.filter(g => !category || g.category === category)
 
   const getLink = (l) => `/ema/${l}`
 
   return (
-    <>
- 
-    <div className={'ema-menu p-2 '}>
-     
-      <div className={'d-flex justify-content-center p-2'}>
-        <img alt={'Menu Ema'} style={{ width: '40vw', borderRadius: '100px' }} src={require('../../assets/ema/ema3.png')} />
+    <div className={'ema-menu'}>
+
+      <div className={'d-flex justify-content-center'}>
+        <img alt={'Menu Ema'} style={{width: '40vw', borderRadius: '100%'}}
+             src={require('../../assets/ema/ema3.png')}/>
       </div>
 
       <h6 className={'menu-categories'}>
@@ -836,22 +838,7 @@ function MainContainer() {
         ))}
       </h6>
 
-      <Row>
-        {FOODS.filter(g => !category || g.category === category).map(g => (
-          <Col lg={3} md={4} xs={6} className="mb-4">
-            <Card className={'food'}>
-              <Card.Img style={{ width: "100%", height: "180px" }} variant="top" src={g.image} />
-              <Card.Body className={'d-flex flex-column'}>
-                <div className={'flex-grow-1'}>
-                  <h5 className={'m-0'}>{g.title}</h5>
-                  <p className={'m-0 text-muted'}>{g.description}</p>
-                </div>
-                <h4 className={'price'}>{g.price} KGS</h4>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+      <MenuListComponent category={category} list={FILTERED_FOODS} />
 
     </div>
     </>

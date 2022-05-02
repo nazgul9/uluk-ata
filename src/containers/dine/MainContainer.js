@@ -1,6 +1,5 @@
-import './styles.scss'
 import {NavLink, useParams} from 'react-router-dom'
-import {Card, Col, Row} from 'react-bootstrap'
+import MenuListComponent from '../../components/MenuListComponent'
 
 const FOODS = [
   {
@@ -587,7 +586,7 @@ const MENU = [
   {label: 'Горячий роллы', link: 'groll'},
   {label: 'Холодные роллы', link: 'hroll'},
   {label: 'Горячии напитки', link: 'gnapitki'},
-  {label: 'Hапитки', link: 'napitki'},
+  {label: 'Напитки', link: 'napitki'},
   {label: 'Сок', link: 'sok'},
   {label: 'Блюда', link: 'bluda'},
   {label: 'Салат', link: 'salat'},
@@ -600,6 +599,8 @@ function MainContainer() {
   const {category} = useParams()
 
   const getLink = (l) => `/dine/${l}`
+
+  const FILTERED_FOODS = FOODS.filter(g => !category || g.category === category)
 
   return (
     <div className={'dine-menu'}>
@@ -618,22 +619,7 @@ function MainContainer() {
        
       </h6>
 
-      <Row>
-        {FOODS.filter(g => !category || g.category === category).map(g => (
-          <Col lg={3} md={4} xs={6} className="mb-4">
-            <Card className={'food'}>
-              <Card.Img variant="top" src={g.image}/>
-              <Card.Body className={'d-flex flex-column'}>
-                <div className={'flex-grow-1'}>
-                  <h5 className={'m-0'}>{g.title}</h5>
-                  <p className={'m-0 text-muted'}>{g.description}</p>
-                </div>
-                <h4 className={'price'}>{g.price} </h4>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+      <MenuListComponent category={category} list={FILTERED_FOODS}/>
 
     </div>
   )
