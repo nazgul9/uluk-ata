@@ -1,4 +1,8 @@
-.ema-menu {
+.uluk-ata {
+  .bg-primary {
+    background-color: #00A2E3 !important;
+  }
+
   .menu-categories {
     z-index: 1000;
     overflow-x: scroll;
@@ -28,20 +32,17 @@
     }
 
     a.active {
-      background-color: #df393b;
-      border: 1px solid #E3181F;
-      // color: #f7de09;
-       color: white;
+      background-color: #e4181f;
+      border: 1px solid #e4181f;
+      color: white;
     }
-    
- 
   }
 
   .food {
     height: 100%;
 
     .price {
-      color: #df393b;
+      color: #e4181f;
       font-size: 18px;
       text-align: center;
     }

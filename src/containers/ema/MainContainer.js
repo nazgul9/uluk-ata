@@ -816,6 +816,7 @@ const MENU = [
 ]
 
 function MainContainer() {
+
   const {category} = useParams()
 
   const FILTERED_FOODS = FOODS.filter(g => !category || g.category === category)
@@ -823,6 +824,7 @@ function MainContainer() {
   const getLink = (l) => `/ema/${l}`
 
   return (
+    <>
     <div className={'ema-menu'}>
 
       <div className={'d-flex justify-content-center'}>

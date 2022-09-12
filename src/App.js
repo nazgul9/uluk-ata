@@ -4,6 +4,7 @@ import {useEffect} from 'react'
 import {Container} from 'react-bootstrap'
 import EmaMainContainer from './containers/ema/MainContainer'
 import ShawarmaMainContainer from './containers/shawarma/MainContainer'
+import UlukMainContainer from './containers/uluk-ata/MainContainer'
 import './App.scss'
 
 function App() {
@@ -25,6 +26,12 @@ function App() {
 
         <Route path="/shawarma" exact element={<ShawarmaMainContainer/>}/>
         <Route path="/shawarma/:category" exact element={<ShawarmaMainContainer/>}/>
+
+        <Route path="/uluk" exact element={<UlukMainContainer/>}/>
+        <Route path="/uluk/:category" exact element={<UlukMainContainer/>}/>
+
+
+
         {/* <Route path="/" exact element={<ShawarmaMainContainer/>}/> */}
 
 
