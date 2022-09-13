@@ -404,7 +404,103 @@ const FOODS = [
   'title': "гуляш",
   'description': '(1 порц)',
   'price': '30 сом',
-  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/gkos6jeq4b6eloaett67`,
+  'image': `https://gotovim-doma.ru/images/recipe/9/d1/9d15eba18c792a3c32095b238ccef6b8_l.jpg`,
+  'category': 'hdishe',
+},
+{
+  'title': "плов ташкентский",
+  'description': '(1 порц)',
+  'price': '190 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/ae1alyi3zulctuxqinyb`,
+  'category': 'hdishe',
+},
+{
+  'title': "ребрышки",
+  'description': '(1 порц)',
+  'price': '340 сом',
+  'image': `https://gotovimop.com/wp-content/uploads/2021/06/rebryshki-v-duhovke.jpg`,
+  'category': 'hdishe',
+},
+{
+  'title': "куурдак по-кыргызски",
+  'description': '(1 порц)',
+  'price': '380 сом',
+  'image': `https://sputnik.kg/img/103416/99/1034169924_205:0:934:801_1920x0_80_0_0_a23c20fbdb5281a4abc2c198358ea3a6.jpg`,
+  'category': 'hdishe',
+},
+{
+  'title': "куурдак ",
+  'description': '(1 порц)',
+  'price': '340 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/n3oqwea1gxhckwojvnhx`,
+  'category': 'hdishe',
+},
+{
+  'title': "цыпленок карри ",
+  'description': '(1 порц)',
+  'price': '300 сом',
+  'image': `https://www.gastronom.ru/binfiles/images/20160314/b6270762.jpg`,
+  'category': 'hdishe',
+},
+{
+  'title': "эт сай",
+  'description': '(1 порц)',
+  'price': '300 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/qmtoihoel6eky40jld3w`,
+  'category': 'hdishe',
+},
+{
+  'title': "тоок сай",
+  'description': '(1 порц)',
+  'price': '230 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/iqwrgqeyac5bx9deakur`,
+  'category': 'hdishe',
+},
+{
+  'title': "ачуу эт",
+  'description': '(1 порц)',
+  'price': '340 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/fpvwc8ad9abiafd61q9e`,
+  'category': 'hdishe',
+},{
+  'title': "бешбармак",
+  'description': '(1 порц)',
+  'price': '320 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/ulaps8vzv0glero4suuh`,
+  'category': 'hdishe',
+},
+{
+  'title': "ребра в аджике",
+  'description': '(1 порц)',
+  'price': '320 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/ulaps8vzv0glero4suuh`,
+  'category': 'hdishe',
+},{
+  'title': "жаровня из говядины",
+  'description': '(1 порц)',
+  'price': '280 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/qmfk1ndi6tgh9ocfaivf`,
+  'category': 'hdishe',
+},
+{
+  'title': "жаровня из курицы",
+  'description': '(1 порц)',
+  'price': '230 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/rcw3xpcvu69ftcavbup4`,
+  'category': 'hdishe',
+},
+{
+  'title': "пельмени жареные",
+  'description': '(1 порц)',
+  'price': '200 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/wk7dlidabbmevgbe8hw6`,
+  'category': 'hdishe',
+},
+{
+  'title': "минор тамчы",
+  'description': '(1 шт)',
+  'price': '50 сом',
+  'image': `https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/ndimtmgooxaqvjzwlrof`,
   'category': 'hdishe',
 },
 
@@ -682,6 +778,341 @@ const FOODS = [
     'image': `https://pp.userapi.com/c844417/v844417077/19d8bb/EDl8wbiwPZk.jpg`,
     'category': 'roll',
   },
+  // фрукто-ягодные чаи
+  {
+    'title': "молочный улун",
+    'price': '120 сом',
+    'category': 'napitki',
+  },
+  {
+    'title': "жасминовый",
+    'price': '120 сом',
+    'category': 'napitki',
+  },
+  {
+    'title': "марокканский",
+    'price': '120 сом',
+    'category': 'napitki',
+  },
+  {
+    'title': "фруктовый",
+    'price': '120 сом',
+    'category': 'napitki',
+  },{
+    'title': "ягодный",
+    'price': '120 сом',
+    'category': 'napitki',
+  },{
+    'title': "боро боро",
+    'price': '250 сом',
+    'category': 'napitki',
+  },
+  {
+    'title': "имбирный",
+    'price': '150 сом',
+    'category': 'napitki',
+  },
+  {
+    'title': "шиповник",
+    'price': '150 сом',
+    'category': 'napitki',
+  },{
+    'title': "чай с лимоном",
+    'price': '70 сом',
+    'category': 'napitki',
+  },
+  {
+    'title': "чай турецкий",
+    'price': '50 сом',
+    'category': 'napitki',
+  },
+  {
+    'title': "Эспрессо",
+    'price': '90 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/wbjou6xin6kqs5gpky9m',
+    'category': 'napitki',
+  },
+  {
+    'title': "Эспрессо двойной",
+    'price': '120 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/wbjou6xin6kqs5gpky9m',
+    'category': 'napitki',
+  },
+  {
+    'title': "капучино",
+    'price': '100 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/w6iqaxotlmhyj1fv9tpx',
+    'category': 'napitki',
+  },
+  {
+    'title': "латте",
+    'price': '120 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/bxklkgoe4sg2f2kmpdh0',
+    'category': 'napitki',
+  },
+  {
+    'title': "капучино xxl",
+    'price': '150 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/zpgogxirjk1hacrvq7r2',
+    'category': 'napitki',
+  },
+  // Напитки
+  
+  {
+    'title': "coca-cola",
+    'description':'(1 л)',
+    'price': '90 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "pepsi",
+    'description':'(1 л)',
+    'price': '90 сом',
+    'category': 'napitkis',
+  },{
+    'title': "fanta",
+    'description':'(1 л)',
+    'price': '90 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "cok j-7",
+    'description':'(1 л)',
+    'price': '120 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "cok j-7 граната",
+    'description':'(1 л)',
+    'price': '120 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "cok dena",
+    'description':'(1 л)',
+    'price': '90 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "fuse tea",
+    'description':'(1 л)',
+    'price': '80 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "pico",
+    'description':'(1 л)',
+    'price': '120 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "жалал-абад",
+    'description':'(1 л)',
+    'price': '50 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "баноква без газ",
+    'description':'(1 л)',
+    'price': '50 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "Asu вода",
+    'description':'(1 л)',
+    'price': '50 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "адыгене",
+    'description':'(1 л)',
+    'price': '50 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "flash",
+    'description':'(0,45 л)',
+    'price': '80 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "nitro",
+    'description':'(0,45 л)',
+    'price': '80 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "adrenalin",
+    'description':'(0,45 л)',
+    'price': '120 сом',
+    'category': 'napitkis',
+  },
+  {
+    'title': "свежие фреш гранат",
+    'description':'(1 л)',
+    'price': '700 сом',
+    'category': 'napitkis',
+  }, {
+    'title': "свежие фреш апельсин",
+    'description':'(1 л)',
+    'price': '700 сом',
+    'category': 'napitkis',
+  },
+  // Лиманат
+  {
+    'title': "манго+маракуйя",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://lavashura.ru/upload/iblock/9c0/9c0c3f3260decb3924f760f749ac322c.jpg',
+    'category': 'Linonats',
+  },
+  {
+    'title': "арбуз+банан",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://адм-покровка.рф/wp-content/uploads/original-14.jpg',
+    'category': 'Linonats',
+  },
+  {
+    'title': "дыня-апельсин",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://foodandmood.com.ua/i/70/94/43/709443/b2d5e35913e64a2dddad42c01959654a-resize_crop_1Xquality_100Xallow_enlarge_0Xw_1200Xh_630.jpg',
+    'category': 'Linonats',
+  },
+  {
+    'title': "груша-маракуйя",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://www.complexbar.ru/upload/resize_cache/iblock/df5/450_550_1/df5bb557ccc3ee82eb75b2b717a1d6cf.jpg',
+    'category': 'Linonats',
+  },
+  {
+    'title': "банан-ананас",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/vcd7r0vlljbzoknoqqzm',
+    'category': 'Linonats',
+  },
+  {
+    'title': "яблоко-киви",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/j6uo3x1lql2rtead5hrv',
+    'category': 'Linonats',
+  },
+  {
+    'title': "цитрус",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/l3wx3rcrav5yo70x0wda',
+    'category': 'Linonats',
+  },
+  {
+    'title': "мохито",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/ggo5vz5gj0ynjracu8lq',
+    'category': 'Linonats',
+  },
+  {
+    'title': "груша",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/qxvzshlg27f1y7vs1oej',
+    'category': 'Linonats',
+  },
+  {
+    'title': "океан",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/z0awypcmrdmzvtwgelvf',
+    'category': 'Linonats',
+  },
+  {
+    'title': "клубника",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/kztlf1wqzoxt1uvmmjhn',
+    'category': 'Linonats',
+  },
+  {
+    'title': "клубничный махито",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/icvanqhkpidusiqpr8p8',
+    'category': 'Linonats',
+  },
+  {
+    'title': "тархун",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://agropererobka.com.ua/content/recipes/show/limonad_tarhun__1485027489.jpg',
+    'category': 'Linonats',
+  },
+  {
+    'title': "айс ти",
+    'description':'(1 л)',
+    'price': '200 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/ahwggclfk1ytw6cdj4d4',
+    'category': 'Linonats',
+  },
+  // Десерты
+  {
+    'title': "Чизкейк",
+    'description':'(1 щт)',
+    'price': '150 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/fnz2mabptbzxzzxf8ye3',
+    'category': 'desserts',
+  },
+  {
+    'title': "Сникерс",
+    'description':'(1 шт)',
+    'price': '150 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/vtplrrwfhgy0qohviiyy',
+    'category': 'desserts',
+  },{
+    'title': "Медовик",
+    'description':'(1 шт)',
+    'price': '110 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/hmdeocfvjgbe4exavbvr',
+    'category': 'desserts',
+  },{
+    'title': "Прага",
+    'description':'(1 шт)',
+    'price': '90 сом',
+    'image':'https://res.cloudinary.com/glovoapp/w_600,f_auto,q_auto/Products/bivdpag5jhprxq5mhmhg',
+    'category': 'desserts',
+  },
+  // блюда для компании
+  {
+    'title': "плов  ташкентский",
+    'description':'(1 кг)',
+    'price': '1600 сом',
+    'category': 'hdishes',
+  },
+  {
+    'title': "плов  узгенский",
+    'description':'(1 кг)',
+    'price': '1500 сом',
+    'category': 'hdishes',
+  },
+  {
+    'title': "ачуу эт",
+    'description':'(1 кг)',
+    'price': '1200 сом',
+    'category': 'hdishes',
+  }, {
+    'title': "куурдак",
+    'description':'(1 кг)',
+    'price': '1200 сом',
+    'category': 'hdishes',
+  }, {
+    'title': "пирожок",
+    'description':'(1 кг)',
+    'price': '1200 сом',
+    'category': 'hdishes',
+  },
 ]
 
 const MENU = [
@@ -695,12 +1126,12 @@ const MENU = [
   { label: 'Шашлык', link: 'shashlyk' },
   { label: 'Пицца', link: 'pizza' },
   { label: 'Роллы', link: 'roll' },
-  { label: 'Горячии напитки', link: 'gnapitki' },
-  { label: 'Напитки', link: 'napitki' },
-  { label: 'Сок', link: 'sok' },
-  { label: 'Блюда', link: 'bluda' },
-  { label: 'Соус', link: 'sous' },
-  { label: 'Вок', link: 'wok' },
+  { label: 'Фрукто-ягодные чаи', link: 'napitki' },
+  { label: 'Напитки', link: 'napitkis' },
+  { label: 'Лиманат', link: 'Linonats' },
+  { label: 'Десерты', link: 'desserts' },
+  { label: 'блюда для компании', link: 'hdishes' },
+ 
 
 ]
 
@@ -714,8 +1145,8 @@ function MainContainer() {
   return (
     <div className={'uluk-ata'}>
 
-      <div className={'d-flex justify-content-center '}>
-        <img alt={'Uluk Ata'} style={{ width: '50vw' }} src={require('../../assets/uluk-ata/logo.png')} />
+      <div className={'d-flex justify-content-center mt-3 mb-3 '}>
+        <img alt={'Uluk Ata'} style={{ width: '50vw',borderRadius:"50%" }} src={require('../../assets/uluk-ata/logo.png')} />
       </div>
 
       <h6 className={'menu-categories'}>
